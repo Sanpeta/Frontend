@@ -68,7 +68,7 @@ src <br>
 >> - [ ] Denunciar cartão
 
 ## Endpoints
-### GET /users
+### **GET /users**
 Esse endpoint é responsavel de buscar todos os usuarios no BD
 
 #### Parametros
