@@ -32,11 +32,11 @@ src <br>
 │   app.js          # Classe app <br>
 │   server.js       # Server para iniciar o app <br>
 └───api              <br>
-  └───controllers   # Funções da controllers do express route <br>
-  └───models        # Modelos do banco de dados <br>
-  └───services      # Regras de negócio <br>
-  └───subscribers   # Eventos async  <br>
-  └───repositories* # Query builders  <br>
+&nbsp; └───controllers   # Funções da controllers do express route <br>
+&nbsp; └───models        # Modelos do banco de dados <br>
+&nbsp; └───services      # Regras de negócio <br>
+&nbsp; └───subscribers   # Eventos async  <br>
+&nbsp; └───repositories* # Query builders  <br>
 └───config          # Configuração das variaveis de ambiente <br>
 └───jobs            # Tarefas de rotinas <br>
 └───loaders         # Modulos para utilizado no app <br>
@@ -48,25 +48,24 @@ src <br>
 # API Aster Cards
 
 > Esta **API** é utilizada para conseguir realizar: 
->> - Criar sua conta
->> - Autenticação em sua conta 
->> - Ver cartões de negócios de outras empresas e pessoas
->> - Criar seu proprio cartão 
->> - Adicionar informações no seu proprio cartão
->> - Atualizar suas informações no seu cartão
->> - Adicionar novas categorias e subcategorias, mostrar os cartões mais bem avaliados
->> - Favoritar seus cartões favoritos, buscar informações
->> - Pesquisar por outros cartões
->> - Trocar de senha
->> - Excluir conta
->> - Ajustar configuração de distância
->> - Limpar histórico
->> - Mostrar seu QRCode
->> - Fazer pesquisa por QRCode ou NFC
->> - Avaliar os cartões
->> - Adicionar comentários
->> - Denunciar cartão
->> - 
+>> - [ ] Criar sua conta
+>> - [ ] Autenticação em sua conta 
+>> - [ ] Ver cartões de negócios de outras empresas e pessoas
+>> - [ ] Criar seu proprio cartão 
+>> - [ ] Adicionar informações no seu proprio cartão
+>> - [ ] Atualizar suas informações no seu cartão
+>> - [ ] Adicionar novas categorias e subcategorias, mostrar os cartões mais bem avaliados
+>> - [ ] Favoritar seus cartões favoritos, buscar informações
+>> - [ ] Pesquisar por outros cartões
+>> - [ ] Trocar de senha
+>> - [ ] Excluir conta
+>> - [ ] Ajustar configuração de distância
+>> - [ ] Limpar histórico
+>> - [ ] Mostrar seu QRCode
+>> - [ ] Fazer pesquisa por QRCode ou NFC
+>> - [ ] Avaliar os cartões
+>> - [ ] Adicionar comentários
+>> - [ ] Denunciar cartão
 
 ## Endpoints
 ### GET /users
