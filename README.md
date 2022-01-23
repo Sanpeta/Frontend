@@ -32,11 +32,11 @@ src <br>
 │   app.js          # Classe app <br>
 │   server.js       # Server para iniciar o app <br>
 └───api              <br>
-&nbsp; └───controllers   # Funções da controllers do express route <br>
-&nbsp; └───models        # Modelos do banco de dados <br>
-&nbsp; └───services      # Regras de negócio <br>
-&nbsp; └───subscribers   # Eventos async  <br>
-&nbsp; └───repositories* # Query builders  <br>
+&nbsp;&nbsp;&nbsp; └───controllers   # Funções da controllers do express route <br>
+&nbsp;&nbsp;&nbsp; └───models        # Modelos do banco de dados <br>
+&nbsp;&nbsp;&nbsp; └───services      # Regras de negócio <br>
+&nbsp;&nbsp;&nbsp; └───subscribers   # Eventos async  <br>
+&nbsp;&nbsp;&nbsp; └───repositories* # Query builders  <br>
 └───config          # Configuração das variaveis de ambiente <br>
 └───jobs            # Tarefas de rotinas <br>
 └───loaders         # Modulos para utilizado no app <br>
