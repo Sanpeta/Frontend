@@ -31,19 +31,19 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 src <br>
 │   app.js          # Classe app <br>
 │   server.js       # Server para iniciar o app <br>
-└───api              <br>
-&nbsp;&nbsp;&nbsp; └───controllers   # Funções da controllers do express route <br>
-&nbsp;&nbsp;&nbsp; └───models        # Modelos do banco de dados <br>
-&nbsp;&nbsp;&nbsp; └───services      # Regras de negócio <br>
-&nbsp;&nbsp;&nbsp; └───subscribers   # Eventos async  <br>
-&nbsp;&nbsp;&nbsp; └───repositories* # Query builders  <br>
-└───config          # Configuração das variaveis de ambiente <br>
-└───jobs            # Tarefas de rotinas <br>
-└───loaders         # Modulos para utilizado no app <br>
-└───utils           # Trechos de código pequeno <br>
-└───helpers         # Trechos de arquitetura de código <br>
-└───routes          # Definição de rotas express <br>
-└───types           # Tipagem (d.ts) para Typescript <br>
+└api              <br>
+&nbsp;&nbsp;&nbsp; └─controllers   # Funções da controllers do express route <br>
+&nbsp;&nbsp;&nbsp; └─models        # Modelos do banco de dados <br>
+&nbsp;&nbsp;&nbsp; └─services      # Regras de negócio <br>
+&nbsp;&nbsp;&nbsp; └─subscribers   # Eventos async  <br>
+&nbsp;&nbsp;&nbsp; └─repositories* # Query builders  <br>
+└config          # Configuração das variaveis de ambiente <br>
+└jobs            # Tarefas de rotinas <br>
+└loaders         # Modulos para utilizado no app <br>
+└utils           # Trechos de código pequeno <br>
+└helpers         # Trechos de arquitetura de código <br>
+└routes          # Definição de rotas express <br>
+└types           # Tipagem (d.ts) para Typescript <br>
 
 # API Aster Cards
 
