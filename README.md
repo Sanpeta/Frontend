@@ -128,7 +128,9 @@ Ou de sem prermissão:
 ```
 
 <br>
+
 ---
+
 <br>
 
 ### GET /api/v1/user/:nickname
@@ -172,7 +174,9 @@ Exemplo de resposta:
 ```
 
 <br>
+
 ---
+
 <br>
 
 ### GET /api/v1/user?nickname=**sanpeta**
@@ -216,7 +220,9 @@ Exemplo de resposta:
 ```
 
 <br>
+
 ---
+
 <br>
 
 ### POST /api/v1/user/card
@@ -248,7 +254,9 @@ Exemplo de resposta:
 ```
 
 <br>
+
 ---
+
 <br>
 
 ### POST /api/v1/user/card
