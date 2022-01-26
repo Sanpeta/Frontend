@@ -127,7 +127,9 @@ Ou de sem prermissão:
 }
 ```
 
+<br>
 ---
+<br>
 
 ### GET /api/v1/user/:nickname
 Esse endpoint é responsavel de buscar pelo nickname que for colocado no endpoint
@@ -169,7 +171,9 @@ Exemplo de resposta:
 }
 ```
 
+<br>
 ---
+<br>
 
 ### GET /api/v1/user?nickname=**sanpeta**
 Esse endpoint é responsavel de buscar pelo nickname que for colocado no endpoint pelo método query
@@ -211,7 +215,9 @@ Exemplo de resposta:
 }
 ```
 
+<br>
 ---
+<br>
 
 ### POST /api/v1/user/card
 Esse endpoint é responsavel de buscar pelo email do usuário e modificar as informações do cartão, a origem da requisição tem de possuir autenticação e se é o do mesmo email no qual está querendo ser alterado
@@ -241,7 +247,9 @@ Exemplo de resposta:
 }
 ```
 
+<br>
 ---
+<br>
 
 ### POST /api/v1/user/card
 Esse endpoint é responsavel de buscar pelo email do usuário e modificar as informações do cartão, a origem da requisição tem de possuir autenticação e se é o do mesmo email no qual está querendo ser alterado
