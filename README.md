@@ -89,6 +89,7 @@ src <br>
 
 # Endpoints <br>
 
+## Conta
 ### POST /api/v1/createAccount
 Esse endpoint é responsavel de criar primeiro um usuário e logo em seguida uma conta pro usuário.
 
@@ -182,6 +183,7 @@ Exemplo de respota:
 
 <br>
 
+## Usuário
 ### GET /api/v1/users
 Esse endpoint é responsavel de buscar todos os usuarios no BD
 
