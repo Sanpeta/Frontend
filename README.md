@@ -81,7 +81,107 @@ src <br>
 >> - [x] Adicionar novas subcategorias
 >> - [ ] Adicionar as subcategorias na(s) categoria(s) especificas
 
-## Endpoints
+<br>
+
+---
+
+<br>
+
+# Endpoints <br>
+
+### POST /api/v1/createAccount
+Esse endpoint é responsavel de criar primeiro um usuário e logo em seguida uma conta pro usuário.
+
+#### Parametros
+email: O email de cadastro.
+password: A senha da conta.
+name: O nome do usuário.
+nickname: O nome de identificação.
+Exemplo do json que deve ser enviado:
+```json
+{
+    "email": "sidneisonic@hotmail.com.br",
+    "password": "1234",
+    "name": "Sidnei de Souza Junior",
+    "nickname": "sanpeta"
+}
+```
+
+#### Respostas
+##### OK! 201
+> Caso os dados encaminhados estiverem conforme solicitado o retorno tem de ser do tipo.
+Exemplo de respota:
+```json
+{
+    "resposta": "Cadastro realizado com sucesso"
+}
+```
+
+##### Falha no cadastramento! 202
+> Caso essa resposta aconteça, isso signifca que o nickname ou o email já estão sendo utilizados.
+Motivos: Email ou Nickname já sendo utilizado.
+Exemplo de respota:
+```json
+{
+    "result": "Email ou nickname já está sendo utilizado"
+}
+```
+
+<br>
+
+---
+
+<br>
+
+### POST /api/v1/auth
+Esse endpoint é responsavel por autenticar o usuário.
+
+#### Parametros
+email: O email de cadastro.
+password: A senha da conta.
+Exemplo do json que deve ser enviado:
+```json
+{
+    "email": "sidneisonic@hotmail.com.br",
+    "password": "1234"
+}
+```
+
+#### Respostas
+##### OK! 201
+> Caso os dados encaminhados estiverem conforme solicitado o retorno tem de ser do tipo. 
+Exemplo de respota:
+```json
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6ZmFsc2UsImVtYWlsIjoic2lkbmVpc29uaWNAaG90bWFpbC5jb20iLCJpYXQiOjE2NDMyMTgxNzUsImV4cCI6MTY0MzM5MDk3NX0.4ajdQRdX4lpKiUYWv6mWNRTsvKBrQYQJURbFhq4BfQ0"
+}
+```
+Se caso a conta criado for admin, esse token expira a cada 10 minutos, enquanto os usuário normais expiram em 2 dias.
+
+##### Falha na autenticação! 401
+> Caso essa resposta aconteça, isso signifca que o email e/ou a senha não estão corretos ou até mesmo a conta pode nem ter sido criada.
+Motivos: Email ou Senha errado ou conta inexistente.
+Exemplo de respota:
+```json
+{
+    "err": "Credencial não autorizada"
+}
+```
+
+##### Sessão expirada! 400
+> Caso essa resposta aconteça, o token expirou.
+```json
+{
+    "err": "Falha interna"
+}
+```
+
+<br>
+
+---
+
+<br>
+
 ### GET /api/v1/users
 Esse endpoint é responsavel de buscar todos os usuarios no BD
 
